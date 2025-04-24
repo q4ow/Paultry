@@ -1,0 +1,23 @@
+{
+  "name": "paultry",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir ./dist",
+    "migrate": "bun run src/db.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^0.8.0",
+    "@elysiajs/swagger": "^0.8.5",
+    "elysia": "^0.8.17",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.3.3"
+  }
+}
