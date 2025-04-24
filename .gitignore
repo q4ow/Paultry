@@ -3,3 +3,6 @@ dist/
 .env
 data/
 cli/build/
+cli/vault
+bun.lock
+scripts/
